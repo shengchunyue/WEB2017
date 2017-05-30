@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8"/>
+	<!-- <link rel="stylesheet" type="text/css" href="D:\I LOVE STUDYING\WEB开发2017-1\课堂练习\lab8\CSS"> -->
+	<style>
+	#header{
+		height:205px;
+		background-image:url(images/bg.gif);
+		background-repeat:repeat-x;
+		background-position:top center;
+	}
+	#banner{
+		width:1000px;
+		height:126px;
+		padding-top:38px;
+		padding-left:px;
+		margin-left:230px;
+	}
+	#nav{
+		background-image:url(images/nav.jpg);
+		/*overflow:auto;*/
+	}
+	.nav_body{
+		/*width:1000px;*/
+		height:40px;
+		/*overflow:auto;*/
+
+	}
+	a:link{text-decoration:none;color:#fff;}
+	a:hover{text-decoration:none;color:#f9f603;}
+	.one{color:#f9f603;}
+	.nav_content{
+		/*overflow:auto;*/
+		float:left;
+		width:900px;
+		font-size:13px;
+		margin:3px 0px;
+	}
+	.nav_search{
+		/*overflow:auto;*/
+		float:left;
+		padding:3px;
+	}
+	ul li{list-style:none;}
+	a{
+		display:block;
+		float:left;
+		/*position:relative;
+		left:35px;*/
+		font-weight:bold;
+		line-height:28px;
+	}
+	form{
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	ul{
+		/*overflow:auto;*/
+		margin:3px;
+	}
+	.two{width:140px;height:19px;background-color:#f8f5ee;margin:3px;}
+	.three{width:44px;height:21px;color:#fff;background-color:#000;border:1px solid #f8f5ee;}
+	#content{
+		/*width:1000px;
+		background-position:center;*/
+		float:left;
+	}
+	#content_top{
+		overflow:hidden;
+	}
+	#content_bottom_left{
+		width:715px;
+		float:left;
+	}
+	#content_bottom_right{
+		width:280px;
+		margin-top:20px;
+		float:right;
+	}
+	.news_pic{
+		width:324px;
+		height:243px;
+		float:left;
+		/*background-image:url(images/news_bg.png);*/
+	}
+	.four{width:310px;height:200px;margin-left:10px;margin-right:10px;margin-top:0px;}
+	.five{width:300px;height:22px;margin:15px 50px;}
+	#news_list{
+		/*width:330px;*/
+		margin-left:20px;
+		float:left;
+		font-size:12px;
+		line-height:20px;
+	}
+	.six{line-height:30px;}
+	#news_announce{
+		width:290px;
+		margin-top:20px;
+		float:left;
+		/*background-image:url(images/board.png);*/
+		background-repeat:no-repeat;
+		font-size:12px;background-position:top center;
+	}
+	#news_announce_list{
+		width:285px;
+		height:210px;
+		font-size:14px;
+		line-height:30px;
+		float:left;
+		background-image:url(images/board_bg.png);
+	}
+	.academic{
+		width:340px;
+		height:54px;
+		background-image:url(images/academic.png);
+		margin-left:0px;
+		float:left;
+		font-size:12px;
+		line-height:30px;
+	}
+	.academic_list{
+		float:left;
+		font-size:12px;
+		line-height:px;
+
+	}
+	.book_news{
+		width:290px;
+		padding-left:25px;
+		height:54px;
+		background-image:url(images/book_news.png);
+		float:left;
+		line-height:30px;
+	}
+	.book_news_list{
+		margin-left:0px;
+		float:left;
+		font-size:12px;
+		
+	}
+	.fengcai{
+		width:700px;
+		overflow:auto;
+		background-image:url(images/fengcai_bg1.png);
+	}
+	.fengcai_list{
+		padding:20px;
+		height:136px;
+		background-image:url(images/fengcai_bg2.png);
+	}
+	</style>
+</head>
+<body>
+<!--页头部分-->
+<div id="header">
+	<!--logo图片-->
+	<!-- <img src="images\bg.gif"> -->
+	<div id="banner">
+		<img src="images\logo.png">
+	</div>
+	<!--导航栏和搜索栏-->
+	<div id="nav">
+		<div class="nav_body">
+			<!--导航栏-->
+			<!-- <img src="images\nav.jpg"> -->
+			<div class="nav_content">
+				<ul>
+				<li><a href="#" class="one">首页&nbsp|</a></li>
+				<li><a href="#">&nbsp中心概况&nbsp|</a></li>
+				<li><a href="#">&nbsp培训动态&nbsp|</a></li>
+				<li><a href="#">&nbsp学术争鸣&nbsp|</a></li>
+				<li><a href="#">&nbsp书坛新闻&nbsp|</a></li>
+				<li><a href="#">&nbsp名家展厅&nbsp|</a></li>
+				<li><a href="#">&nbsp燕赵风采&nbsp|</a></li>
+				<li><a href="#">&nbsp经典解读示范&nbsp|</a></li>
+				<li><a href="#">&nbsp谏言互动</a></li>
+				</ul>
+			</div>
+			<!--搜索栏-->
+			 <div class="nav_search">
+				<form><input type="text" class="two"><input type="botton" class="three" value="搜索"></form>
+			</div>
+		</div>
+	</div>
+</div>
+<!--页面主体部分-->
+<div id="content">
+	<div id="content_top">
+		<!--热点图片-->
+		<div class="news_pic"><div class="four"><img src="images/news.jpg"></div><div class="five">“幽静通幽”书写人生传奇</div></div>
+		<!--培训动态-->
+		<div id="news_list">
+		<img src="images\change.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images\more.png">
+		<ul >
+			<li><a href="#">臻.妙— —谢云、苏士澎在北京雍....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">“守望相助.尽责圆梦”中国书法家协会创作活动.&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">中国书法出版传媒有限责任公司问共和&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">“中国书法之乡”命名授牌仪式在河南省狹县举行&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">中国文字博物馆馆藏书画精品展暨中国字&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">第一届兰亭学校师生书法作品展获奖、入展名单&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+			<li><a href="#">第25届中日友好自作诗书交流展&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</a></li>
+		</ul>
+		</div> 
+		<!--站内公告-->
+		<div id="news_announce">
+			<div> <img src="images/board.png"> </div>
+			<div id="news_announce_list">
+			<ul background="images/board_bg.png">
+			<li>臻.妙— —谢云、苏士澎在北京雍....</li>
+			<li>“守望相助.尽责圆梦”中国书法家协会创作活动...</li>
+			<li>中国书法出版传媒有限责任公司问共和</li>
+			<li>“中国书法之乡”命名授牌仪式在河南省狹县举行</li>
+			<li>中国文字博物馆馆藏书画精品展暨中国字</li>
+			<li>第一届兰亭学校师生书法作品展获奖、入展名单</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content_bottom_left">
+		<!--学术争鸣-->
+		
+		<div class="academic"><div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/more.png"></div>
+		<div class="academic_list">
+			<ul>
+			<li>臻.妙— —谢云、苏士澎在北京雍....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+			<li>“守望相助.尽责圆梦”中国书法家协会创作活动...&nbsp[04-25]</li>
+			<li>中国书法出版传媒有限责任公司问共和&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+			<li>“中国书法之乡”命名授牌仪式在河南省狹县举行&nbsp&nbsp[04-25]</li>
+			<li>中国文字博物馆馆藏书画精品展暨中国字&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+			</ul>
+		</div>
+		</div>
+		<!--书坛新闻-->
+		<div class="book_news"><div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/more.png"></div>
+		<div class="book_news_list">
+			<ul>
+				<li>臻.妙— —谢云、苏士澎在北京雍....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+				<li>“守望相助.尽责圆梦”中国书法家协会创作活动...&nbsp[04-25]</li>
+				<li>中国书法出版传媒有限责任公司问共和&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+				<li>“中国书法之乡”命名授牌仪式在河南省狹县举行&nbsp&nbsp[04-25]</li>
+				<li>中国文字博物馆馆藏书画精品展暨中国字&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[04-25]</li>
+			</ul>
+		</div>
+		</div>
+		<!--燕赵风采-->
+		<div class="fengcai"><div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/more.png"></div>
+		<div class="fengcai_list">
+			<ul>
+			<li><a href="#"><img src="images/fengcai1.jpg"></a></li>
+			<li><a href="#"><img src="images/fengcai2.jpg"></a></li>
+			<li><a href="#"><img src="images/fengcai3.jpg"></a></li>
+			<li><a href="#"><img src="images/fengcai4.jpg"></a></li>
+			</ul>
+	</div>
+	<div id="content_bottom_right"></div>
+</div>
+<!--页脚部分-->
+<div id="footer"></div>
+</body>
+</html>

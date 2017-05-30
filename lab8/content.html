@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "宋体";
+			font-size: 12px;
+			background-image: url(images/bodybg.gif);
+			background-repeat: repeat-x;
+		}
+		a:link{text-decoration:none;};
+		a:hover{text-decoration: underline;};
+		#header{
+			background-image: url(images/bg.gif);
+			height: 205px;
+			background-repeat: repeat-x;
+		}
+		#banner{
+			float: left;
+			margin-left: 120px;
+			margin-top: 38px;
+			width: 1000px;
+			height: 120px;		
+		}
+		#nav{	
+			float: left;		
+			height: 40px;
+			background-image: url(images/nav.jpg);
+			width: 1330px;
+		}
+		.nav_body{
+			width: 1330px;
+			font-weight: bold;
+			color: #fff;
+			line-height: 40px;
+			
+		}
+		.nav_content{
+			width: 1000px;
+			position: center;
+			float: left;
+		}
+		a.two:link{color: #fff;;text-decoration: none;}
+		a.two:hover{text-decoration: none;color: #f9f603;}
+		.nav_searchtext{
+			width: 140px;
+			height: 19px;
+			background-color: #f8f5ee;
+		}
+		.nav_searchbutton{
+			width: 44px;
+			height: 21px;
+			background-color: #000;
+			color:white;
+			border:1px solid  #f8f5ee;
+		}
+		#content{
+			width: 1300px;
+			height: 900px;
+			overflow: hidden;
+			float: left;
+		}
+		.content_left{
+			width: 700px;
+			float: left;
+		}
+		.left1{
+			font-size: 16px;
+			height: 45px;
+			width: 800px;
+			line-height: 45px;
+			text-align: center;
+			border-bottom: 1px solid #c9baa5;
+			float: left;
+			margin-left: -160px;
+			margin-top: 30px;
+		}
+		.left1_1{
+			font-size: 12px;
+			margin: 10px;
+			color: #757575;
+			float: left;
+			margin-left: -460px;
+			margin-top: 100px;
+		}
+		.left2{
+			line-height: 28px;
+			padding: 10px;
+			float: left;
+			margin-top: 0px;
+			margin-left: -160px;
+			width: 800px;
+		}
+		p{
+			text-indent: 2em;
+			margin-top: 5px;
+		}
+		.left2_1{
+			margin: 20px;
+			float: left;
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+		.left2_2{
+			margin: 20px;
+			float: left;
+			margin-left: -145px;
+			margin-top: 10px;
+			line-height: 28px;
+			border-bottom: 1px solid #c9baa5;
+		}
+		.left3{
+			height: 40px;
+			line-height: 40px;
+			margin-top: 10px;
+			font-size: 13px;
+			float: left;
+			margin-left: -80px;
+			margin-top: 10px;
+		}
+		.content_right{
+			height: 400px;
+			width: 980px;
+			float: right;
+			margin: 16px;
+		}
+		.right1{
+			border:1px solid #c9baa5;
+			background-image: url(images/bg.png);
+			background-repeat: no-repeat;
+			margin-bottom: 10px;
+			float: right;
+			margin-right: 0px;
+			margin-top: -860px;
+			height: 250px;
+			width: 280px;
+		}
+		.right1_1{
+			margin-bottom: 10px;
+			float: right;
+			margin-right: 55px;
+			margin-top: 0px;
+		}
+		.right1_2{
+			line-height: 30px;
+			margin-left: 13px;
+			list-style-type: none;
+			float: left;
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+		.mianbao{
+			height: 40px;
+			line-height: 40px;
+			padding-left: 43px;
+			float: left;
+			margin-left: 80px;
+			margin-top: 0px;
+		}
+		#foot{
+				height: 90px;
+				clear: both;
+				background-image: url(images/foot.gif);
+				width: 1300px;
+				margin-top: 20px;
+			}
+			.xswljc{
+				float: left;
+				margin-top: 0px;
+				margin-left: 320px;
+				text-align: center;
+			}
+			.ljcxsw{
+				float: left;
+				margin-top: 20px;
+				margin-left: 400px;
+			}
+			.jkl{
+				float: left;
+				margin-top: -00px;
+				margin-left: 310px;
+			}
+			.show_bg{
+			background-image: url(images/show_bg.png);
+			float: right;
+			height: 400px;
+			width: 300px;
+			margin-top: -500px;
+			margin-right: -20px;
+			margin-bottom: 200px;
+			background-repeat: no-repeat;
+		}
+		.show_bg1{
+			background-image: url(images/mingjia.jpg);
+			float: right;
+			background-repeat: no-repeat;
+			height: 200px;
+			width: 200px;
+			margin-top: 20px;
+			margin-right: 60px;
+		}
+		.show3{
+			background-image: url(images/show.png);
+			background-repeat: no-repeat;
+			float: right;
+			height: 30px;
+			width: 200px;
+			margin-top:-550px;
+			margin-right: 0px;
+		}
+		.show_bg2{
+			float: right;
+			width: 220px;
+			margin-right: 50px;
+			line-height: 20px;
+		}
+		.shiwu{
+			font-weight: bolder;
+			font-family: '黑体'；
+			font-size: 15px;
+		}
+		.show_bg3{
+			float: left;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		.show_bg4{
+			float: right;
+			margin-top: 2px;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+        <div id="banner"><img src="images/logo.png"></div>
+        <div id="nav">
+        	<div class="nav_body">
+        		<div class="nav_content">
+        			<a href="#" class="two"><font color="#f9f603">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;</font></a>|
+        			<a href="#" class="two" >&nbsp;中心概况&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;培训动态&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;学术争鸣&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;书坛新闻&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;名家展厅&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;燕赵风采&nbsp;</a>|
+        			<a href="#" class="two" >&nbsp;经典解读与示范&nbsp;</a>|
+        			<a href="#" class="two" id="xsw">&nbsp;谏言互动&nbsp;</a>
+        		</div>
+        		<div class="nav_search">
+        			<form>
+        				<input type="text" class="nav_searchtext">
+        				<input type="button" value="搜索" class="nav_searchbutton">
+        			</form>
+        		</div>
+        	</div>
+        </div>
+    </div>
+     <div id="content">
+      	<div class="mianbao">当前位置><a href="file:///E:/web.github/lab9/index.html">首页></a>书坛新闻</div>
+      	<div class="content_left">
+      			<div class="left1">河北省书协召开2016年工作会议</div>
+      			<div class="left1_1">河北文艺网&nbsp;&nbsp;&nbsp;2016-03-15</div>
+      			<div class="left2"><p>3月11日，“2016河北省书法家协会工作会议”在石家庄召开。河北省文联党委书记解晓勇，中国书协副主席、河北省书协主席刘金凯，河北省委宣传部文艺处长王振儒，河北省书协副主席兼秘书长刘月卯，副主席苛峰、陈茂才、李白、韩信、鲁班、诸葛亮、后裔等，河北省书协主席团委员、副秘书长、各地市书协负责人、优秀书法家代表近百人参加了会议。刘月卯主持会议。</p></div>
+      			<div class="left2_1"><img src="images/huiyi.jpg"></div>
+      			<div class="left2_2"><p>会议首先传学习了中宣部部长刘奇葆在中国书协第七次全国代表大会开幕式上的讲话摘要、省委常委宣传部长田向利在全省宣传工作位以上的讲话摘要。王振儒代表省委宣传部讲话。</p><p>会议随后对2015年度先进单位和先进个人进行了表彰。廊坊、沧州、石家庄、保定、邢台、承德、秦皇岛、邯郸等市书法家协会被授予先进单位，省直、唐山、张家口、衡水等基层书协被授予服务基层先进单位。</p></div>
+      			<div class="left3">上一篇：<a href="#">弘扬优秀文化传统是媒体的责任</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下一篇：<a href="#">河北省文联2016年部门预算数据分析</a></div>
+      	</div>
+      	<div class="content_right">
+      		<div class="right1">
+      			<div class="right1_1"><img src="images/news.png"></div>
+      			<div>
+      				<ul class="right1_2">
+      					<li>河北省群众书法大展</li>
+      					<li>河北省文联2016年预算情况</li>
+      					<li>河北省书协在第十一届书法展上创造佳绩</li>
+      					<li>省书协召开机关作风整顿动员大会</li>
+      					<li>河北省书协启动书法进万家宋万福活动</li>
+      				</ul>
+      			</div>
+      		</div>
+      		<div class="show3"></div>
+      		<div class="show_bg">
+				<div class="show_bg1"></div>
+				<div class="show_bg2"><font color="red" class="shiwu">欧阳中石</font>，山东省肥城市人，著名文化学者、书法家、书法教育家。早年拜在京剧大师奚啸伯的门下。现任首都师范大学教授。博士生导师、中国书法文化教育研究所所长，北京唐风美术馆名誉馆长。</div>
+				<div class="show_bg3"><img src="images/before.png"><img src="images/next1.png"><img src="images/view.png" class="show_bg4"></div>
+			</div>
+      	</div>
+     </div>
+     <div id="foot">
+    	<div class="xswljc">
+    		<a href="#">电子信箱&nbsp;</a>|&nbsp;<a href="#">设为首页&nbsp;</a>|&nbsp;
+    		<a href="#">在线咨询&nbsp;</a>|&nbsp;<a href="#">加入收藏&nbsp;</a>|&nbsp;<a href="#">网站地图&nbsp;</a>|&nbsp;<a href="#">关于我们&nbsp;</a>
+    	</div>
+    	<div class="jkl"><img src="images/line.jpg" ></div>
+    	<div class="ljcxsw">Copyright2013-2014 Hebshufajia.com,All Rights Reserved</br>冀ICP备05067795号 冀公网安备110402440008号</div>
+    </div>
+</body>
+</html>
