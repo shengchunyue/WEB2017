@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>计算器</title>
+  <style type="text/css">
+     .l1{
+    width: 296px;
+    height: 96px;
+ }
+      #result{
+        width: 296px;
+        height: 96px;
+        font-size: 60px;
+        text-align: right;
+      }
+      .l2{
+        width: 95px;
+        height: 96px;
+      }
+      .xsw{
+        width: 65px;
+        height: 65px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+  </style> 
+<script type="text/javascript">
+    var clearFlag=false;
+    function getNum(num){
+    //alert(num);
+      var objresult=document.getElementById("result");
+      if(clearFlag){
+        objresult.value="";
+        clearFlag=false;
+      }
+      //alert(objresult);
+      objresult.value+=num;
+    }
+    function getResult(){
+      var objresult=document.getElementById("result");
+      objresult.value=objresult.value+"="+eval(objresult.value);
+      clearFlag=true;
+    }
+    function clearScreen() {
+      var objresult=document.getElementById("result");
+      objresult.value="0";
+    }
+  </script>
+</head>
+<body>
+<table width="400" height="500" border="1" cellpadding="2">
+  <tr>
+    <td colspan="3"><input type="text" name="result" id="result"></td>
+    <td class="l2"><input type="button" value="C" onclick="clearScreen(0)" class="xsw"></td>
+  </tr>
+  <tr>
+    <td class="l2"><input type="button" value="1" onclick="getNum(1)" class="xsw"></td>
+    <td class="l2"><input type="button" value="2" onclick="getNum(2)" class="xsw"></td>
+    <td class="l2"><input type="button" value="3" onclick="getNum(3)" class="xsw"></td>
+    <td class="l2"><input type="button" value="+" onclick="getNum('+')" class="xsw"></td>
+  </tr>
+  <tr>
+    <td class="l2"><input type="button" value="4" onclick="getNum(4)" class="xsw"></td>
+    <td class="l2"><input type="button" value="5" onclick="getNum(5)" class="xsw"></td>
+    <td class="l2"><input type="button" value="6" onclick="getNum(6)" class="xsw"></td>
+    <td class="l2"><input type="button" value="-" onclick="getNum('-')" class="xsw"></td>
+  </tr>
+  <tr>
+    <td class="l2"><input type="button" value="7" onclick="getNum(7)" class="xsw"></td>
+    <td class="l2"><input type="button" value="8" onclick="getNum(8)" class="xsw"></td>
+    <td class="l2"><input type="button" value="9" onclick="getNum(9)" class="xsw"></td>
+    <td class="l2"><input type="button" value="*" onclick="getNum('*')" class="xsw"></td>
+  </tr>
+  <tr>
+    <td class="l2"><input type="button" value="0" onclick="getNum(0)" class="xsw"></td>
+    <td class="l2"><input type="button" value="." onclick="getNum('.')" class="xsw"></td>
+    <td class="l2"><input type="button" value="=" onclick="getResult()" class="xsw"></td>
+    <td class="l2"><input type="button" value="/" onclick="getNum('/')" class="xsw"></td>
+  </tr>
+</table>
+</body>
+</html>
