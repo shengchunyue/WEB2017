@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/text.css" />
+		<script src="jquery-3.2.1.slim.min.js"></script>
+		<script src="JS/text.js"></script>
+</head>
+<body bgcolor="#CF9">
+<!-- 导航栏 -->
+<div id="header">
+	<ul id="nav">
+		<li><a href="#">秋意</a>
+			<ul>
+				<li><a href="#">春华秋实</a></li>
+				<li><a href="#">春露秋霜</a></li>
+				<li><a href="#">春花秋月</a></li>
+			</ul>
+		</li>
+		<li><a href="#">秋园</a>
+			<ul>
+				<li><a href="#">叶落知秋</a></li>
+				<li><a href="#">月旦春秋</a></li>
+				<li><a href="#">冰壶秋月</a></li>
+			</ul>
+		</li>
+		<li><a href="#">秋凉</a>
+			<ul>
+				<li><a href="#">盈盈秋水</a></li>
+				<li><a href="#">昆玉秋爽</a></li>
+				<li><a href="#">华星秋月</a></li>
+			</ul>
+		</li>
+		<li><a href="#">秋蔷</a>
+			<ul>
+				<li><a href="#">晴云秋月</a></li>
+				<li><a href="#">多故之秋</a></li>
+				<li><a href="#">社燕秋鸿</a></li>
+			</ul>
+		</li>
+		<li><a href="#">秋影</a>
+			<ul>
+				<li><a href="#">秋菊春兰</a></li>
+				<li><a href="#">秋毫之末</a></li>
+				<li><a href="#">秋水伊人</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- 自动播放&表单操作 -->
+<div id="m">
+	<!-- 自动播放 -->
+	<div id="picScroll" onmouseout="action();"onmouseover="Clear();">
+		<span id="picScroll1">
+			<img src="images/1.jpg" />
+			<img src="images/10.jpg" />
+			<img src="images/12.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/14.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/9.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+		<span id="picScroll2">
+			<img src="images/1.jpg" />
+			<img src="images/10.jpg" />
+			<img src="images/12.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/14.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/9.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+	</div>
+	<!-- 表单操作 --> 
+	<div id="form">
+	 	<table border="0" cellpadding="10" cellspacing="0" align="left">
+			<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp知秋评秋</h1>
+			<tr id="tr1">
+				<td colspan="2">姓名：</td>
+				<td colspan="8" class="t"><input type="text" name="username"/></td>
+			</tr>
+			<tr id="">
+				<td colspan="2">手机号：</td>
+				<td colspan="8"><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2">请再次确认：</td>
+				<td colspan="8"><input type="password" name="password"></td>
+			</tr>
+		</table>
+		<textarea rows="16" cols="70" id="text"></textarea>
+		<form id="form2"><select><option>公开评论</option></select></form>
+	</div>
+</div>
+<!-- 进度条 -->
+<div id="processcontainer">  
+   	<div id="processbar" style="width:0%;"></div>  
+</div> 
+</body>
+</html>
+
